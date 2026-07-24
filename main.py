@@ -18,7 +18,7 @@ while True:
         print("You chose add expense")
         amount = float(input("Enter expenses amount: $"))
         expenses.append(amount)
-        print(expenses)
+        print(f"${amount} added successfully!")
 
     elif choice == "2":
         print("You chose view expenses") 
