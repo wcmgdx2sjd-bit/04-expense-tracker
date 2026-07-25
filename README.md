@@ -6,15 +6,20 @@ A simple command-line expense tracker built in Python.
 
 - Add new expenses
 - View all recorded expenses
-- Display the total amount spent
-- Number each expense for easy reading
-- Menu-driven interface that runs until the user exits
-
-## Technologies Used
+- Calculate total expenses
+- Save expenses to a file
+- Load saved expenses when the program starts
+- Input validation for invalid numbers
+  
+## Technologies Used - Skills practiced
 
 - Python 3
-- Git
-- GitHub
+- Lists
+- Loops
+- File reading and writing
+- Exception handling
+- Git & Github
+- .gitignore
 
 ## How to Run
 
@@ -26,27 +31,22 @@ A simple command-line expense tracker built in Python.
 python main.py
 ```
 
-## What I Learned
 
-This project helped me practice:
-
-- `while` loops
-- `for` loops
-- `enumerate()`
-- Lists
-- `.append()`
-- `sum()`
-- User input
-- Conditional statements (`if`, `elif`, `else`)
 
 ## Future Improvements
 
-- Save expenses to a file so data persists after closing the program.
 - Add expense categories (Food, Gas, Entertainment, etc.).
 - Allow users to delete or edit expenses.
-- Display the average expense.
 - Add dates for each expense.
+- JSON storage
+- 
+## What I Learned
 
+- How to save program data between runs using files
+- How to handle invalid user input with try/except
+- How to organize code using functions
+- How to use Git and GitHub to manage versions
+  
 ## Author
 
 Brandon Phlipot
