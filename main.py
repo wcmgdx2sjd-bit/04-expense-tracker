@@ -1,17 +1,23 @@
-expenses = []
+def load_expenses():
+    expenses = []
+
+    try:
+        with open("expenses.txt","r") as file:
+            contents = file.read()
+
+        expense_lines = contents.splitlines()
+
+        for expense in expense_lines:
+            expenses.append(float(expense))
+
+    except FileNotFoundError:
+         print("No expenses file found yet.")
+
+    return expenses
+
+expenses = load_expenses()             
+
     
-try:
-     with open("expenses.txt","r") as file:
-      contents = file.read()
-
-     expenses = contents.splitlines() 
-        
-     for number, expense in enumerate(expenses):
-
-      expenses[number] = float(expense)
-except FileNotFoundError:
-    print("No expenses file found yet")      
-
 def add_expenses():
     try:
          amount = float(input("Enter expenses amount: $"))
